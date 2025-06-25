@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../pic/fon2.png');
+  background-repeat: repeat;
+  background-size: cover; 
+  background-position: center;
+  background-color: #f6fff9; 
+}
+
+.gallery {
+  padding: 90px;
+  text-align: center;
+  
+}
+
+.gallery__button {
+  padding: 10px 20px;
+  font-size: 25px;
+  cursor: pointer;
+  border: 5px solid #355f49;
+  border-radius: 8px;
+  background-color: #78a098;
+  color: #052716;
+  transition: all 0.3s ease, transform 0.2s ease;
+    font-family: "Playpen Sans", cursive;
+  font-optical-sizing: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gallery__button:hover {
+  background-color: #91b3aa; 
+  color: #0e3d25;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(53, 95, 73, 0.4);
+}
+
+
+.gallery__loader {
+  margin: 20px 0;
+  font-weight: bold;
+   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      font-family: "Playpen Sans", cursive;
+  font-optical-sizing: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #111a15;
+
+}
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 60px;
+  min-height: 400px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
